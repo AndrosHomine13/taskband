@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskBand App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>💎 TaskBand</h1>
+        <p class="subtitle">Tu memoria emocional digital</p>
+
+        <div class="task-form">
+            <input type="text" id="taskName" placeholder="Escribe tu tarea..." maxlength="30">
+            <select id="categorySelect">
+                <option value="" disabled selected>Selecciona una prioridad</option>
+                <option value="urgent">🔴 Urgente</option>
+                <option value="personal">🔵 Personal</option>
+                <option value="study">🟢 Estudio</option>
+            </select>
+            <button id="addTask">Agregar</button>
+        </div>
+
+        <div class="pulsera-container">
+            <div class="pulsera" id="pulsera"></div>
+        </div>
+
+        <div id="taskList"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
